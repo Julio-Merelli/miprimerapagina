@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primer Bebsite</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"> </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+  
+  <body>
+
+    <a class="logo" href="index.html"><img src="Logo.png" width="100px" height="100px"   href="index.html" alt=""></a>   
+    <header>
+      <nav  class="barra"> 
+        
+        <ul  class="barra">
+             
+          <li><a class="btbarra" href="index.html">Inicio</a></li>
+          <li><a class="btbarra" href="PrimerasClases.html">Mi primer Website</a></Li>
+          <li><a class="btbarra" href="Fuentes.html">Fuentes</a></li>          
+        </ul>
+      </nav>
+      <button class="responsivemenu"> menu</button>
+    </header>
+
+    <div class="menu">
+
+      
+      <ul>
+        <li  ><a class="btmenu" href="#" onclick="mostrarInicio()" >Mis Inicios</a></li>
+        <li  ><a class="btmenu" href="#" onclick="mostrarImagenes()">Imágenes</a></li>
+        <li  ><a class="btmenu" href="#" onclick="mostrarFormulario()">Formulario</a></li>
+      </ul>
+    </div>
+
+   <div class="container">
+
+
+    <div id="inicio">
+      
+    
+
+      <h1> A continuacion voy a motrar unas fotos de unos gatos y perros</h1>
+      <h1 class="responsivecatdog">Si ves esto es porque estas desde un dispositivo que no admite el poder gatuno y perruno</h1>
+    
+    
+    
+    <div class="cat">
+      <img  src="cat1.jpeg" width="300" height="200"alt="">
+      <img src="cat2.jpeg" width="200" height="200"alt="">
+    </div>
+
+
+
+      <div class="dog">
+        <img src="dog1.jpg" width="300" height="200"alt="">
+        <img src="dog2.webp" width="300" height="200"alt="">
+      </div>
+    
+
+
+
+       <table class="tabla">
+         <tr class="catdog">
+           <td><ul>Gatos</ul></td>  
+           <td><ul>Perros</ul></td>
+         </tr>
+         <tr>
+           <td> <ul>Arañan</ul> </td>
+           <td> <ul>Ladran</ul></td>
+         </tr>
+         <tr>
+          <td> <ul>Saltan</ul></td>
+          <td> <ul>Muerden</ul></td> 
+         </tr>
+         <tr>
+           <td> <ul>Agiles</ul></td>
+           <td> <ul>Lentos</ul></td> 
+          </tr>
+          <tr>
+           <td> <ul>Débiles</ul></td>
+           <td> <ul>Fuerte</ul></td> 
+          </tr>
+          <tr>
+           <td> <ul>Limpios</ul></td>
+           <td> <ul>Sucios</ul></td> 
+          </tr>
+      </table>
+
+      <button class="boton_jugueton" onclick="showalert()" >Esto es un boton?</button>
+
+
+
+    </div>
+
+
+
+    <div id="imagenes"  style="display: none;">
+
+
+
+      
+        <h1>AQUI ESTAN LAS IMAGENES DE GATOS Y PERROS</h1>
+
+        <img class="ForImg" src="imagenes/cat1.png" alt="">
+        <img class="ForImg" src="imagenes/cat2.png" alt="">
+        <img class="ForImg" src="imagenes/cat3.png" alt="">
+        <img class="ForImg" src="imagenes/cat5.png" alt="">
+    
+      
+
+    
+    </div>
+    
+    <div id="formulario"  style="display: none;">
+
+
+      <form id="form">
+        
+        <div class="formula">
+          
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        </div>
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>  
+          
+        </div>
+        <div>
+          <label for="comentario">Agrega un nuevo comentario:</label>
+          <textarea id="comentario" required></textarea>
+
+          
+        </div>
+
+   
+
+        <button type="submit">Enviar</button>
+
+      </form>
+      
+
+    </div>
+
+
+   </div>   
+
+
+  </body>
+
+
+</html>
+
