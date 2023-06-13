@@ -3,6 +3,7 @@
 
 body {
     background-color: rgb(215, 234, 250);
+    margin: 0;
     
 }
 
@@ -10,7 +11,7 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(63, 63, 63);
     text-align: center;
-
+    align-items: center;
 }
 
 h4{
@@ -19,10 +20,10 @@ h4{
 }
 
 p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: oblique;
-    font-size: 12px;
-    margin-top: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  font-size: 12px;
+  margin-top: 1px;
 }
 
 
@@ -62,6 +63,27 @@ margin-bottom: 20px;
 }    
 
 
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding-top: 10px;
+}
+
+.column{
+  flex: 1;
+  padding:  2px;
+}
+
+.columnp1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  font-size: 20px;
+  margin-top: 0px;
+  margin: 2px;
+}
+
+
 .tabla {
     border: 3px solid rgb(119, 119, 119);
     border-collapse: collapse;
@@ -93,20 +115,6 @@ margin-bottom: 20px;
     margin-left: 230px;
     padding: 20px;
   }
-
-  .row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding-top: 10px;
-  }
-
-  .column{
-    flex: 1;
-    padding:  10px;
-  }
-
-
   .menu {
     position: fixed;
     top: 120px;
@@ -236,21 +244,25 @@ textarea {
 header{
 
   
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #66918b;
   color: #fff;
   text-align: center;
   padding: 20px;
-
+  margin: 0;
+  z-index: 998;
 
 }
 .barra {
-  display: inline-flex;
-  margin-right: 20px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 .btbarra{
   margin: 10px;
@@ -282,18 +294,26 @@ header{
 
 
 .logo {
-  display: flex;
-  float: left;
+  position: fixed;
+  top: 0;
+  left: 5px;
+  width: 100px;
+  height: 100px;
   background-color: #3a242400;
-  top: 1px;
-
+  padding: 0;
+  z-index: 999;
 }
 
 
 main{
-
+  position: relative;
   display: flex;
+
+  top: 100px;
+  z-index: 1;
+ 
 }
+
 
 .troll{
   position: fixed;
@@ -301,7 +321,20 @@ main{
   right: 0;
 }
 
+.fuenteh1{
+  display: flex;
+  position: fixed;
+  left: 10%;
 
+  align-items: center;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(63, 63, 63);
+  text-align: center;
+  align-items: center;
+}
 .fuentes_intro{
   position: fixed;
   top: 250px;
@@ -335,16 +368,10 @@ main{
  .fuentes_ballena{
 
   position: absolute;
-  top: 250px;
-  right: 100px;
+  top: 150px;
+  right: 400px;
   max-width: 100%;
-  width: 700px;
- 
-  
-  
-  
-
-
+  width: 600px;
  }
 
 

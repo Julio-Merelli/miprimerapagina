@@ -2,6 +2,7 @@
 function showalert(){
     alert('sos curioso?????')
 }
+
 function mostrarInicio(){
     document.getElementById("inicio").style.display = "block";
     document.getElementById("formulario").style.display = "none";
@@ -22,6 +23,12 @@ function mostrarImagenes(){
 function mostrarmenuresp(){
   document.getElementById
 }
+
+
+document.querySelector("button.responsivemenu").addEventListener("click", function() {
+  document.querySelector("nav.barra ul.barra").classList.toggle("nav-links-responsive");
+});
+
 
 const form = document.getElementById('form');
 form.addEventListener('submit', function(event) {
@@ -63,9 +70,6 @@ function validateForm() {
 }
 
 
-document.querySelector("button.responsivemenu").addEventListener("click", function() {
-  document.querySelector("nav.barra ul.barra").classList.toggle("nav-links-responsive");
-});
 
 
 
