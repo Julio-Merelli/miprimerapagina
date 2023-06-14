@@ -112,7 +112,7 @@ margin-bottom: 20px;
 
 
   .container{
-    margin-left: 230px;
+    margin-left: 300px;
     padding: 20px;
   }
   .menu {
@@ -305,7 +305,7 @@ header{
 }
 
 
-main{
+.pagMain{
   position: relative;
   display: flex;
 
@@ -323,7 +323,7 @@ main{
 
 .fuenteh1{
   display: flex;
-  position: fixed;
+  position: relative;
   left: 10%;
 
   align-items: center;
@@ -336,8 +336,8 @@ h1{
   align-items: center;
 }
 .fuentes_intro{
-  position: fixed;
-  top: 250px;
+  position: relative;
+  top: 50px;
   left: 50px;
   width: 600px;
   height: 400px;
@@ -367,14 +367,88 @@ h1{
 
  .fuentes_ballena{
 
-  position: absolute;
-  top: 150px;
-  right: 400px;
+  position: relative;
+  top: -550px;
+  left: 900px;
   max-width: 100%;
   width: 600px;
  }
 
+ .slider{
+  position: relative;
+  top: 150px;
 
+
+ }
+
+
+ .img_galeria {
+  width: 600px;
+}
+
+.img-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.671);
+  position: relative;
+}
+
+#siguiente {
+  right: 0;
+}
+
+#anterior {
+  left: 0;
+}
+
+.bt-slider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 60px;
+}
+
+.bt-slider:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.toggle-button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#toggle-button {
+  font-size: 18px;
+  padding: 10px 20px;
+}
 
 
 

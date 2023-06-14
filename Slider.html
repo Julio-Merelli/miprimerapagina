@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Galería de imágenes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+
+    <a class="logo" href="index.html"><img src="Logo.png" width="100px" height="100px"   href="index.html" alt=""></a>   
+    <header>
+      <nav  class="barra"> 
+        
+        <ul  class="barra">
+             
+          <li><a class="btbarra" href="index.html">Inicio</a></li>
+          <li><a class="btbarra" href="PrimerasClases.html">Mi primer Website</a></Li>
+          <li><a class="btbarra" href="Fuentes.html">Fuentes</a></li>    
+          <li><a class="btbarra" href="Slider.html">Slider</a></li>      
+        </ul>
+      </nav>
+      <button class="responsivemenu"> menu</button>
+    </header>
+    
+    
+    <main>
+        <div class="slider">
+            <div class="toggle-button-container">
+                <button id="toggle-button">Ver vista galería de imágenes</button>
+            </div>
+        
+            <div class="slider-container">
+                <div class="img-slider">
+                    <img class="img_galeria" src="imagenes/dog1.png" alt="">
+                    <img class="img_galeria" src="imagenes/dog2.png" alt="">
+                    <img class="img_galeria" src="imagenes/dog3.png" alt="">
+                    <img class="img_galeria" src="imagenes/dog4.png" alt="">
+                </div>
+                <button id="anterior" class="bt-slider">&lt;</button>
+                <button id="siguiente" class="bt-slider">&gt;</button>
+            </div>
+        
+            <div class="gallery-container" style="display: none;">
+                <div class="gallery-row">
+                    <img class="gallery-img" src="imagenes/dog1.png" alt="">
+                    <img class="gallery-img" src="imagenes/dog2.png" alt="">
+                    <img class="gallery-img" src="imagenes/dog3.png" alt="">
+                </div>
+                <div class="gallery-row">
+                    <img class="gallery-img" src="imagenes/dog4.png" alt="">
+                </div>
+            </div>
+        
+
+
+        </div>
+
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
